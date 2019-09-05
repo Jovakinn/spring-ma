@@ -26,7 +26,7 @@ class ItemDAOTest {
         item.setName("Perf");
         item.setPrice(1000);
 
-        List<Item> items = itemDAO.findAll();
-        assertTrue(items.isEmpty());
+        List<Item> checkedItems = itemDAO.findAll();
+        assertNotNull(checkedItems);
     }
 }
